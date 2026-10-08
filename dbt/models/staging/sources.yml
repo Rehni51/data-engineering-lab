@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+
+    tables:
+      - name: weather_hourly
+
+        columns:
+          - name: forecast_time
+            data_tests:
+              - not_null

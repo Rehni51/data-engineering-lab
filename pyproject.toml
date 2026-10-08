@@ -1,0 +1,31 @@
+[project]
+name = "data-engineering-lab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Henri Durozay", email = "henri.durozay01@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=3.0.6",
+    "psycopg[binary]>=3.3.6",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.1.1",
+]
+
+[project.scripts]
+data-engineering-lab = "data_engineering_lab:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "dbt-core>=1.12,<1.13",
+    "dbt-postgres>=1.11,<1.12",
+    "pytest>=9.1.1",
+    "ruff>=0.16.9",
+]

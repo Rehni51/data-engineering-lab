@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+
+# Tasks
+.airflow/
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+
+#test
+.pytest_cache/
+.ruff_cache/

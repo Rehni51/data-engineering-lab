@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: daily_weather
+
+    description: >
+      Agrégation quotidienne
+      des prévisions météo.
+
+    columns:
+      - name: forecast_date
+        data_tests:
+          - not_null
+          - unique

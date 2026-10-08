@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_weather
+
+    description: >
+      Données météo horaires nettoyées
+      provenant de la couche raw.
+
+    columns:
+      - name: forecast_time
+        data_tests:
+          - not_null
+          - unique
+
+      - name: temperature_c
+        data_tests:
+          - not_null
+
+      - name: latitude
+        data_tests:
+          - not_null
+
+      - name: longitude
+        data_tests:
+          - not_null
