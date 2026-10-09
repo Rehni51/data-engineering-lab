@@ -1,11 +1,9 @@
+import subprocess
 from datetime import timedelta
 from pathlib import Path
-import subprocess
 
 import pendulum
-
 from airflow.sdk import DAG, task
-
 
 PROJECT_ROOT = Path("/home/hdrz/projects/data-engineering-lab")
 UV_BIN = "/home/hdrz/.local/bin/uv"
