@@ -118,3 +118,19 @@
 [0m18:19:39.233594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a84d0eefd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a84c901490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a84d36f680>]}
 [0m18:19:39.233853 [debug] [MainThread]: Flushing usage events
 [0m18:19:39.657720 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:17:00.445929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7372218623c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73722050bed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73722050bb10>]}
+
+
+============================== 16:17:00.449797 | bb8484b6-e524-4310-8d97-009fe6f8eb4f ==============================
+[0m16:17:00.449797 [info ] [MainThread]: Running with dbt=1.12.5
+[0m16:17:00.450183 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'hints_enabled': 'True', 'printer_width': '80', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'log_path': 'logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'debug': 'False', 'target_path': 'None', 'profiles_dir': '/home/hdrz/.dbt', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt ls', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'empty': 'None', 'static_parser': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'quiet': 'False'}
+[0m16:17:00.450534 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/hdrz/projects/data-engineering-lab/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:17:00.450988 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": false, "command_wall_clock_time": 0.05509315, "process_in_blocks": "131400", "process_kernel_time": 0.107834, "process_mem_max_rss": "109344", "process_out_blocks": "16", "process_user_time": 0.939704}
+[0m16:17:00.451318 [debug] [MainThread]: Command `dbt ls` failed at 16:17:00.451251 after 0.06 seconds
+[0m16:17:00.451543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737220350b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7372203a4290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7372203328b0>]}
+[0m16:17:00.451750 [debug] [MainThread]: Flushing usage events
+[0m16:17:00.890068 [debug] [MainThread]: An error was encountered while trying to flush usage events

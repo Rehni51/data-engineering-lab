@@ -20,6 +20,8 @@ jobs:
       POSTGRES_USER: datauser
       POSTGRES_PASSWORD: datapassword
       POSTGRES_DB: datalab
+      GCP_PROJECT_ID: ci-placeholder
+      BQ_LOCATION: EU
 
     steps:
       - name: Checkout repository

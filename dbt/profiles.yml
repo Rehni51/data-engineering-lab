@@ -16,3 +16,13 @@ weather_analytics:
       schema: dbt_henri
 
       threads: 4
+
+    bigquery:
+      type: bigquery
+      method: oauth
+
+      project: "{{ env_var('GCP_PROJECT_ID') }}"
+      dataset: dbt_henri
+      location: "{{ env_var('BQ_LOCATION', 'EU') }}"
+
+      threads: 4

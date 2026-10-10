@@ -4,12 +4,12 @@ SELECT
     latitude,
     longitude,
 
-    temperature_2m::NUMERIC(6, 2) AS temperature_c,
+    temperature_2m AS temperature_c,
 
-    relative_humidity_2m::INTEGER
+    relative_humidity_2m
         AS relative_humidity_pct,
 
-    precipitation::NUMERIC(8, 2)
+    precipitation
         AS precipitation_mm,
 
     ingested_at
