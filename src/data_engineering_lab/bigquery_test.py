@@ -1,14 +1,20 @@
 from google.cloud import bigquery
 
-client = bigquery.Client()
 
-query = """
-SELECT
-    CURRENT_TIMESTAMP() AS current_time,
-    'Hello BigQuery' AS message
-"""
+def main() -> None:
+    client = bigquery.Client()
 
-result = client.query(query).result()
+    query = """
+    SELECT
+        CURRENT_TIMESTAMP() AS current_time,
+        'Hello BigQuery' AS message
+    """
 
-for row in result:
-    print(row.current_time, row.message)
+    result = client.query(query).result()
+
+    for row in result:
+        print(row.current_time, row.message)
+
+
+if __name__ == "__main__":
+    main()
